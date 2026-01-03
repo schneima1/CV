@@ -54,7 +54,7 @@
 \begin{document}
 
 % Header with improved spacing
-\begin{center}
+\begin{minipage}{0.7\textwidth}
     {\fontsize{32}{36}\selectfont\bfseries\color{darkblue}Marc Schneider}
     
     {\large Research Associate | Aerospace Engineering}
@@ -71,15 +71,21 @@
     
     \faLinkedinIn\ \href{https://www.linkedin.com/in/marc-schneider-96a8a3238/}{LinkedIn} \quad \faResearchgate\ \href{https://www.researchgate.net/profile/Marc-Schneider-23}{ResearchGate}
     }
-\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{Profilbild.jpg}
+\end{minipage}
 
-{\color{mediumgray}\hrule height 1pt}
+% \vspace{6pt}
+
+% {\color{black}\hrule height 2pt}
 
 \vspace{2pt}
 
 % Professional Summary
 \sectiontitle{Professional Summary}
-Aerospace engineer with proven expertise in managing independent research projects from conception to completion. Skilled educator with experience teaching seminars and supervising students at all levels. Specialized in guidance systems, machine learning, sensor fusion, and control theory with focus on trajectory prediction, missile guidance, and autonomous systems. Strong background in mathematical modeling, simulation, and algorithm development.
+Aerospace engineer with proven expertise in managing independent research projects from conception to completion. Skilled educator with experience teaching seminars and supervising students at all levels. Specialized in guidance systems, machine learning, sensor fusion, and control theory with focus on trajectory prediction, missile guidance, and autonomous systems. Strong background in mathematical modeling, simulation, and algorithm development. 
 
 \vspace{6pt}
 
@@ -93,29 +99,36 @@ Aerospace engineer with proven expertise in managing independent research projec
 
 \hspace{-0.0em}\textbf{Projects:}
 \begin{itemize}[leftmargin=1.0cm]
-    \item \textbf{Machine Learning for Cooperative Guided Missiles} -- Stochastic trajectory prediction using normalizing flows
+    \item \textbf{Machine Learning for Cooperative Guided Missiles} -- Stochastic trajectory prediction using Normalizing Flows (where will a missile target be in the future?), solution of Dynamic Weapon Target Assignment problems (how to guide multiple cooperating missiles to multiple targets?)
 
-    \item \textbf{Sensor-based Reinforcement Learning} -- Autonomous emergency landing on low-gravity celestial bodies
+    \item \textbf{Sensor-based Asteroid Landing using Reinforcement Learning} -- Use lidar measurements in an LSTM-RL agent to replace the nominal GNC algorithms in case of malfunction
 
-    \item \textbf{Sensor Fusion for Guided Missile Navigation} -- Multi-sensor integration (IMU, GNSS, Radar, IR) with delayed measurements
+    \item \textbf{Sensor Fusion for Guided Missile Navigation} -- Multi-sensor integration using GNSS, radar, and IMU under the influence of delayed measurements (how to fuse sensor information to better estimate the state of the missile and the target)
 
-    \item \textbf{Multi-Hypothesis Guidance} -- Guidance command computation under uncertain target maneuvers
+    \item \textbf{Multi-Hypothesis Guidance for Missiles} -- Guidance command computation under the presence of multiple hypotheses regarding the target behavior (how to guide a missile under uncertain target maneuvers?)
 \end{itemize}
 
 \hspace{0.0em}\textbf{Teaching \& Course Development:}
 \begin{itemize}[leftmargin=1.0cm]
     \item \textbf{Estimation Techniques Seminar} (Schätzverfahren-Seminar) -- Course instructor and content developer (every semester since 2021)
-    \item \textbf{Aerobotics Seminar} -- Instructor and curriculum developer (2021--2024), supervising Reinforcement Learning and Model Predictive Control topics
-    \item \textbf{Student Supervision:} Mentored 7 master's theses and 1 bachelor's thesis with focus on advanced ML and control theory topics
+    \item \textbf{Aerobotics Seminar} -- Instructor and curriculum developer (2021--2024), supervising Reinforcement Learning and Model Predictive Control groups
+    % \item \textbf{Student Supervision:} Mentored 7 master's theses and 1 bachelor's thesis with focus on advanced ML and control theory topics
 \end{itemize}
 
 \vspace{5pt}
 
 \jobtitle{Research Assistant}{Sep. 2018 -- Nov. 2018}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Further development of DA40 flight simulator and implementation of helicopter simulation model.}
 
+\vspace{-5pt}
+
 \jobtitle{Research Assistant}{May 2018 -- Aug. 2018}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Tutor for "Flugregelungsentwurf" course: Flight simulator enhancement and support for student projects.}
 
+
+\vspace{-5pt}
+
 \jobtitle{Intern}{Apr. 2017 -- Aug. 2017}{MAHLE GmbH}{Stuttgart, Germany}{Thermal management system design for Lithium-Ion batteries. Analysis and optimization of cooling systems.}
+
+\vspace{-5pt}
 
 \jobtitle{Intern}{Jun. 2014 -- Aug. 2014}{ZENTNER Elektrik-Mechanik GmbH}{Freiburg, Germany}{Introductory internship: Metal processing, machining, and basic mechanical engineering principles.}
 
@@ -124,11 +137,17 @@ Aerospace engineer with proven expertise in managing independent research projec
 % Education
 \sectiontitle{Education}
 
-\degreeline{Master's Thesis}{2019 -- 2020}{Path planning and obstacle avoidance for multiple UAVs using POMDP, \textit{Grade: 1.0}}{Queensland University of Technology, Brisbane, Australia}
+\degreeline{Master's Thesis}{2019 -- 2020}{Path planning and obstacle avoidance for multiple UAVs using POMDP, \textit{Grade: 1.0} \\ }{\qquad \qquad \qquad \qquad \qquad \qquad \quad \qquad \qquad \qquad \qquad \mbox{Queensland University of Technology, Brisbane, Australia}}
 
-\degreeline{Master of Science in Aerospace Engineering}{2018 -- 2020}{GPA: 1.3}{University of Stuttgart}
+\vspace{-3pt}
+
+\degreeline{Master of Science in Aerospace Engineering}{2018 -- 2020}{GPA: 1.3, Specializations: Experimental and Numerical Simulation Methods, System Dynamics and Automation Engineering}{University of Stuttgart}
+
+% \vspace{-3pt}
 
 \degreeline{Bachelor of Science in Aerospace Engineering}{2014 -- 2018}{GPA: 1.7, Thesis: Entwurf einer Simulationsumgebung zur kooperativen Aufwindschätzung / Design of a Simulation Environment for Cooperative Updraft Estimation, \textit{Grade: 1.0}}{University of Stuttgart}
+
+\vspace{-3pt}
 
 \degreeline{High School Diploma (Abitur)}{2006 -- 2014}{GPA: 1.0}{Kepler Gymnasium Freiburg}
 
@@ -138,14 +157,20 @@ Aerospace engineer with proven expertise in managing independent research projec
 % Skills
 \sectiontitle{Technical Skills \& Core Competencies}
 
-\textbf{Research \& Development:} Machine Learning, Hyperparameter Tuning, Algorithms, Simulations, Kalman Filtering, Guidance Laws, Control Theory, Estimation Theory, Sensor Fusion, Flight Mechanics, Multi-Agent Systems
+
+\textbf{Research \& Development (Industry-Focused):}  
+Guidance, Navigation \& Control (GNC), Flight Mechanics, Guidance Laws, Kalman Filtering, Sensor Fusion, Control Theory, Estimation Theory, Multi-Agent Systems, Machine Learning, Algorithms, Simulations, Hyperparameter Tuning
+
+\vspace{0.5em}
+
+
 
 \vspace{6pt}
 
 \textbf{Programming Languages:}
 \begin{itemize}
-    \item \textbf{Expert:} Python (PyTorch, NumPy, SciPy), MATLAB, Simulink
-    \item \textbf{Advanced:} \LaTeX, Git, Bash
+    \item \textbf{Expert:} Python (PyTorch, NumPy, SciPy, Scikit-learn, Matplotlib), MATLAB, Simulink, \LaTeX
+    \item \textbf{Advanced:} Git, Bash
     \item \textbf{Intermediate:} C/C++
 \end{itemize}
 
@@ -160,7 +185,9 @@ Aerospace engineer with proven expertise in managing independent research projec
 
 \vspace{6pt}
 
-\textbf{Tools \& Frameworks:} GitHub Copilot, Deep Learning Frameworks, Version Control Systems, Containerization
+\textbf{Tools \& Frameworks (Industry-Focused):}  
+Version Control Systems (Git), Cloud Computing, Deep Learning Frameworks (PyTorch), Experiment Tracking (Weights \& Biases), Hyperparameter Optimization (Optuna), GitHub Copilot
+
 
 \vspace{15pt}
 
@@ -203,6 +230,15 @@ Aerospace engineer with proven expertise in managing independent research projec
     
     \item (2022). "Multi-Hypothesis Guidance With Interacting Multiple Model Filter." \href{https://www.researchgate.net/publication/357595202_Multi-Hypothesis_Guidance_With_Interacting_Multiple_Model_Filter}{ResearchGate}
 \end{enumerate}
+
+\vspace{15pt}
+
+% \sectiontitle{Personal}
+
+% \begin{itemize}
+%     \item Developed and host \href{https://spy-signal.com}{spy-signal.com}, an information website and newsletter focused on leveraged ETFs.
+%     \item Strong interest in local large language models (LLMs) and their applications in research and development.
+% \end{itemize}
 
 \vspace{15pt}
 
