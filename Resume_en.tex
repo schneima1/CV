@@ -24,7 +24,7 @@
 % Remove page numbers
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[C]{\small (\thepage/\pageref{LastPage})}
+\fancyfoot[C]{\small (\thepage/\pageref*{LastPage})}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\footskip}{20pt}
 
@@ -85,27 +85,30 @@
 
 % Professional Summary
 \sectiontitle{Professional Summary}
-Aerospace engineer with proven expertise in independent industry and research projects from proposal to completion. Skilled educator with experience teaching seminars and supervising students at all levels. Specialized in guidance systems, machine learning, sensor fusion, and control theory with focus on trajectory prediction, missile guidance, and autonomous systems. Strong background in mathematical modeling, simulation, and algorithm development. 
+Aerospace engineer with proven expertise in industry and research projects from proposal to completion. Skilled educator with experience teaching seminars and supervising students at all levels. Specialized in connecting classical Guidance, Navigation, and Control (GNC) with Machine Learning (ML), focusing on trajectory prediction, missile guidance, sensor fusion, and autonomous systems. Strong background in mathematical modeling, simulation, and algorithm development. 
 
 \vspace{6pt}
 
 % Work Experience
 \sectiontitle{Work Experience}
 
-\jobtitle{Research Associate}{Aug. 2020 -- July 2026}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Overall topic: Guidance and navigation for guided missiles}
+\jobtitle{Research Associate}{Aug. 2020 -- July 2026}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Overall topic: Guidance, Navigation \& Control and Machine Learning for Aerospace Applications.}
 % \hspace{1em}\textbf{Research Focus:} 
+
+\vspace{-10pt}
+
+\hspace{-0.0em}\textbf{Projects:}
 
 \vspace{-9pt}
 
-\hspace{-0.0em}\textbf{Projects:}
 \begin{itemize}[leftmargin=1.0cm]
-    \item \textbf{Machine Learning for Cooperative Guided Missiles} -- Stochastic trajectory prediction using Normalizing Flows (where will a missile target be in the future?), solution of Dynamic Weapon Target Assignment problems (how to guide multiple cooperating missiles to multiple targets?)
+    \item \textbf{Machine Learning for Cooperative Guided Missiles} -- Stochastic trajectory prediction using Normalizing Flows (\textit{where will a missile target be in the future?}), solution of Dynamic Weapon Target Assignment problems (\textit{how to guide multiple cooperating missiles to multiple targets?})
 
-    \item \textbf{Sensor-based Asteroid Landing using Reinforcement Learning} -- Use lidar measurements in an LSTM-RL agent to replace the nominal GNC algorithms in case of malfunction
+    \item \textbf{Sensor-based Asteroid Landing using Reinforcement Learning} -- Use lidar measurements in an LSTM-RL agent to replace the nominal GNC algorithms in case of malfunction (\textit{how to land a spacecraft on an asteroid using only noisy sensor data?})
 
-    \item \textbf{Sensor Fusion for Guided Missile Navigation} -- Multi-sensor integration using GNSS, radar, and IMU under the influence of delayed measurements (how to fuse sensor information to better estimate the state of the missile and the target)
+    \item \textbf{Sensor Fusion for Guided Missile Navigation} -- Multi-sensor integration using IMU, GNSS, radar, and IR under the influence of delayed measurements (\textit{how to fuse sensor information to better estimate the state of the missile and the target?})
 
-    \item \textbf{Multi-Hypothesis Guidance for Missiles} -- Guidance command computation under the presence of multiple hypotheses regarding the target behavior (how to guide a missile under uncertain target maneuvers?)
+    \item \textbf{Multi-Hypothesis Guidance for Missiles} -- Guidance command computation under the presence of multiple hypotheses regarding the target behavior (\textit{how to guide a missile under uncertain target maneuvers?})
 \end{itemize}
 
 \hspace{0.0em}\textbf{Teaching \& Course Development:}
@@ -119,16 +122,16 @@ Aerospace engineer with proven expertise in independent industry and research pr
 
 \jobtitle{Research Assistant}{Sep. 2018 -- Nov. 2018}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Further development of DA40 flight simulator and implementation of helicopter simulation model.}
 
-\vspace{-5pt}
+\vspace{-9pt}
 
 \jobtitle{Research Assistant}{May 2018 -- Aug. 2018}{Institute of Flight Mechanics and Controls, University of Stuttgart}{Stuttgart, Germany}{Tutor for "Flugregelungsentwurf" course: Flight simulator enhancement and support for student projects.}
 
 
-\vspace{-5pt}
+\vspace{-9pt}
 
 \jobtitle{Intern}{Apr. 2017 -- Aug. 2017}{MAHLE GmbH}{Stuttgart, Germany}{Thermal management system design for Lithium-Ion batteries. Analysis and optimization of cooling systems.}
 
-\vspace{-5pt}
+\vspace{-9pt}
 
 \jobtitle{Intern}{Jun. 2014 -- Aug. 2014}{ZENTNER Elektrik-Mechanik GmbH}{Freiburg, Germany}{Introductory internship: Metal processing, machining, and basic mechanical engineering principles.}
 
@@ -158,8 +161,8 @@ Aerospace engineer with proven expertise in independent industry and research pr
 \sectiontitle{Technical Skills \& Core Competencies}
 
 
-\textbf{Research \& Development (Industry-Focused):}  
-Guidance, Navigation \& Control (GNC), Flight Mechanics, Guidance Laws, Kalman Filtering, Sensor Fusion, Control Theory, Estimation Theory, Multi-Agent Systems, Machine Learning, Algorithms, Simulations, Hyperparameter Tuning
+\textbf{Research \& Development:}  
+Guidance, Navigation \& Control (GNC), Flight Mechanics, Guidance Laws, Kalman Filtering, Sensor Fusion, Control Theory, Estimation Theory, Multi-Agent Systems, Machine Learning, Algorithms, Simulations
 
 \vspace{0.5em}
 
@@ -185,7 +188,7 @@ Guidance, Navigation \& Control (GNC), Flight Mechanics, Guidance Laws, Kalman F
 
 \vspace{6pt}
 
-\textbf{Tools \& Frameworks (Industry-Focused):}  
+\textbf{Tools \& Frameworks:}  
 Version Control Systems (Git), Cloud Computing, Deep Learning Frameworks (PyTorch), Experiment Tracking (Weights \& Biases), Hyperparameter Optimization (Optuna), GitHub Copilot
 
 
