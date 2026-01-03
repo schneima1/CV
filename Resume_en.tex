@@ -1,0 +1,190 @@
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+%------------------------------------------------------------------ Variables
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.4\textwidth}
+\setlength{\rightcolwidth}{0.6\textwidth}
+
+%------------------------------------------------------------------
+\title{Curriculum Vitae - Marc Schneider}
+\author{\LaTeX{} Ninja}
+\date{June 8, 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Marc}{Schneider}{}{white}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{0.5cm}
+\columnratio{0.2}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+\paracolbackgroundoptions
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{Profilbild.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Contact Information}\\[0.5em]
+
+{\footnotesize
+Marc Schneider\\
+marc@marc-schneider.de\\
++49 160 2421697\\
+Bogenstraße 9d\\
+70569 Stuttgart}
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{Skills} \\[0.5em]
+\begin{itemize}
+    \item Machine Learning
+    \item Hyperparameter Tuning
+    \item Algorithms
+    \item Simulations
+    \item Kalman Filter
+    \item Guidance Laws
+    \item Control Theory
+    \item Estimation Theory
+    \item Sensor Fusion
+    \item Flight Mechanics
+    \item Github Copilot
+    \item Pytorch
+\end{itemize}
+
+\bigskip
+
+\bigskip
+
+\bg{cvgreen}{white}{Programming Languages}\\[0.5em]
+\begin{tabular}{@{\hspace{-2.5em}}r @{\hspace{0em}}l}
+     \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.14}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{MATLAB} &  \barrule{0.14}{0.5em}{cvgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{Simulink} &  \barrule{0.12}{0.5em}{cvgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.1}{0.5em}{cvgreen} \\
+      \bg{skilllabelcolour}{iconcolour}{Git} & \barrule{0.1}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{C / C++} & \barrule{0.05}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{bash} & \barrule{0.03}{0.5em}{cvpurple} \\
+\end{tabular}
+\bigskip
+
+{\hspace{-2.5em}}\bg{cvgreen}{white}{Languages}\\[0.5em]
+\begin{tabular}{l | l}
+\textbf{German} & C2\\
+\textbf{English} & C1\\
+\textbf{French} & B1\\
+\end{tabular}
+
+\vspace{4em}
+
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Work Experience}
+
+\begin{tabular}{r| p{0.55\textwidth} c}
+\cvevent{Aug. 2020--Present}{Research Associate}{Institute of Flight Mechanics and Controls}{University of Stuttgart}{Research Focus: Guidance and Navigation for Guided Missiles.
+
+Research Projects:
+
+\begin{itemize}
+    \item Machine Learning for Cooperative Guided Missiles: Stochastic Trajectory Prediction with Normalizing Flows. Publication: \url{https://www.researchgate.net/publication/381520100_Trajectory_Prediction_for_Missile_Targets_A_Probabilistic_Approach_Using_Machine_Learning}
+   \item Sensor Fusion for Guided Missile Navigation using GNSS, Radar, and IMU under the influence of delayed measurements. Publications: \url{https://www.researchgate.net/publication/360484762_Radar-Aided_Inertial_Navigation_with_Delayed_Measurements}, \newline \url{https://www.researchgate.net/publication/377395801_Enhancing_Target_Acquisition_in_Long-Range_Missiles_through_Multi-Sensor_Fusion}
+   \item Multi-Hypothesis Guidance for Guided Missiles: Computing a Steering Command under multiple possible target maneuvers. Publication: \url{https://www.researchgate.net/publication/357595202_Multi-Hypothesis_Guidance_With_Interacting_Multiple_Model_Filter}
+\end{itemize}
+
+Supervised Courses:
+\begin{itemize}
+    \item Estimation Techniques Seminar ("Schätzverfahren-Seminar) (summer semester 2021 - summer semester 2023, every semester)
+   \item Aerobotics-Seminar (summer semester 2021 - 2024, each summer semester), including expansion of the course and supervision of groups covering topics in Reinforcement Learning and Model Predictive Control.
+\end{itemize}
+
+Supervised Theses:
+\begin{itemize}
+    \item Master's Thesis: "Stochastic Trajectory Prediction of Civil Aircraft using Conditional Normalizing Flows" (2025)
+    \item Master's Thesis: Development and Implementation of a GPS Monitoring Algorithm (2025)
+    \item Master's Thesis: "Reachability Prediction Using Neural Networks" (2024, paper pending)
+    \item Master's Thesis: "Reinforcement Learning-Based Missile Evasion Strategies" (2023)
+    \item Master's Thesis: "Sensor Fusion for Distributed Directional Measurements" (2022)
+    \item Bachelor's Thesis: "Predictive Guidance Law Considering Induced Drag" (2022)
+    \item Master's Thesis: "Model Predictive Control Guidance Law for Guided Missiles" (2021)
+\end{itemize}
+}
+\\
+\cvevent{May 2019 -- Jul. 2019}{Research Assistant}{Institute of Flight Mechanics and Controls}{University of Stuttgart}{Tutor for the course "Flugregelungsentwurf": Support and enhancement of a flight simulator for testing control algorithms developed by students.}
+
+%\cvevent{Test}{Test2}
+
+\\
+
+\cvevent{Sep. 2018 -- Nov. 2018}{Research Assistant}{Institute of Flight Mechanics and Controls}{University of Stuttgart}{Further development of an existing DA40 flight simulator, implementation of a simulation model for helicopters.} \\
+
+\cvevent{May 2018 -- Aug. 2018}{Research Assistant}{Institute of Flight Mechanics and Controls}{University of Stuttgart}{Tutor for the course "Flugregelungsentwurf": Support and enhancement of a flight simulator for testing control algorithms developed by students.} \\
+
+\cvevent{Apr. 2017 -- Aug. 2017}{Intern}{MAHLE GmbH}{Stuttgart}{Thermal Management for Lithium-Ion Batteries.} \\
+
+\cvevent{Jun. 2014 -- Aug. 2014}{Intern}{ZENTNER Elektrik - Mechanik GmbH}{Freiburg}{Introductory internship for studies, metal processing.} \\
+
+    
+\end{tabular}
+\vspace{3em}
+
+\section*{Education}
+
+\begin{tabular}{c p{0.6\textwidth} c}
+    \cvdegree{2019 -- 2020}{Master's Thesis "Path planning and obstacle avoidance for multiple UAVs using POMDP"}{Grade: 1.0}{Queensland University of Technology, Brisbane, Australia \color{headerblue}}{} \\
+    \cvdegree{2018 -- 2020}{Aerospace Engineering, Master of Science}{GPA: 1.3}{University of Stuttgart \color{headerblue}}{} \\
+    \cvdegree{2014 -- 2018}{Aerospace Engineering, Bachelor of Science}{GPA: 1.7}{University of Stuttgart \color{headerblue}}{} \\
+    \cvdegree{2006 -- 2014}{High School Diploma ("Abitur")}{GPA: 1.0}{Kepler Gymnasium Freiburg \color{headerblue}}{} \\
+\end{tabular}
+
+\vspace{3em}
+
+\section{Social Networks}
+
+\infobubble{\faAt}{cvgreen}{white}{\url{https://www.linkedin.com/in/marc-schneider-96a8a3238/}}
+\\
+\infobubble{\faAt}{cvgreen}{white}{\url{https://www.researchgate.net/profile/Marc-Schneider-23}}
+
+\vspace{2em}
+
+Stuttgart, \today
+
+\vfill{} % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+\end{document}
