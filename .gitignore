@@ -1,5 +1,8 @@
-Resume_en*
-!Resume_en.tex
+# Editor / IDE settings
 .vscode/
-Resume_de*
+
+# LaTeX build artifacts: ignore everything for each resume, keep only .tex source
+Resume_de.*
 !Resume_de.tex
+Resume_en.*
+!Resume_en.tex
